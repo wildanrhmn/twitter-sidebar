@@ -1,0 +1,40 @@
+.sidebarBox{
+    width: 300px;
+    min-width: 250px;
+    padding: 20px 20px;
+    box-shadow: 0 0 6px hsl(210 14% 90%);
+    z-index: 10;
+    background-color: #fff;
+    position: fixed;
+    float: left;
+    height: 100%;
+}
+
+.moreLinks{
+    margin-bottom: 20px;
+    border-radius: 18px !important;
+}
+
+.moreLinks:hover{
+    background-color: #e8f5fe !important;
+    color: #50b7f5;
+    transition: color 100ms ease-out;
+}
+
+.moreLinks > .moreIcon {
+    margin-right: 15px;
+}
+
+.menuItem {
+    display: flex;
+    gap: 10px;
+    padding-top: 15px;
+}
+
+.menuButton {
+    margin-bottom: 20px;
+}
+
+/* .menuButton > span {
+    margin-left: 15px;
+} */
