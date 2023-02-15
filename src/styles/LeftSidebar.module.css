@@ -1,12 +1,12 @@
+
 .sidebarBox{
-    width: 300px;
+    width: 23%;
     min-width: 250px;
     padding: 20px 20px;
     box-shadow: 0 0 6px hsl(210 14% 90%);
     z-index: 10;
     background-color: #fff;
     position: fixed;
-    float: left;
     height: 100%;
 }
 
@@ -33,6 +33,12 @@
 
 .menuButton {
     margin-bottom: 20px;
+}
+
+.menuButton:hover{
+    background-color: #e8f5fe !important;
+    color: #50b7f5;
+    transition: color 100ms ease-out;
 }
 
 /* .menuButton > span {

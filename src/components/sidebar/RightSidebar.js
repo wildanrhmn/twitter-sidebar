@@ -1,21 +1,24 @@
 import React from "react";
 import Styles from "../../styles/RightSidebar.module.css";
-import { Box, Button, Image } from "@chakra-ui/react";
+import { Box, Button, Image, useDisclosure } from "@chakra-ui/react";
 
 import { Apple } from "@mui/icons-material";
 
+import ModalAnya from "../modal/Modal";
+
 const RightSidebar = () => {
+
+    const {isOpen, onOpen, onClose} = useDisclosure()
 
   return (
     <Box
-      w="400px"
+      w="23%"
       h="100vh"
       px="20px"
       py="20px"
       bgColor="white"
       position="fixed"
       right={0}
-      float="right"
       className={Styles.BoxContainer}
     >
         <Box
@@ -45,6 +48,7 @@ const RightSidebar = () => {
                         className={Styles.ButtonTiga}
                         display="flex"
                         justifyContent="space-between"
+                        onClick={onOpen}
                         >
                              <Box className={Styles.TextContain}>
 
@@ -65,6 +69,9 @@ const RightSidebar = () => {
                                 src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
                              />
                         </Box>
+
+                        <ModalAnya isOpen={isOpen} onClose={onClose} onOpen={onOpen} images="https://pbs.twimg.com/profile_images/1523318395860664320/wTNrjSwZ_400x400.jpg"  />
+
                         <Box as={Button}
                          borderRadius={18}
                          bgColor="#1e1e1e"

@@ -1,6 +1,9 @@
+.BoxContainer{
+    box-shadow: 0 0 6px hsl(210 14% 90%);
+}
 .InfoBox{
     border: 1px solid #1e1e1e;
-    box-shadow: 0 0 6px hsl(210 14% 90%);
+    
 }
 
 .HeaderBox{
@@ -22,7 +25,7 @@
 }
 
 .ButtonTiga:hover{
-    background-color: black;
+    background-color: black !important;
 }
 
 .TextContain > p {
