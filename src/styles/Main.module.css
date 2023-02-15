@@ -8,3 +8,38 @@
     box-shadow: 0 0 6px hsl(210 14% 90%);
     padding: 5px 25px;
 }
+
+.mainSection > h2 {
+    font-weight: bold;
+}
+
+.textContain {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    justify-content: space-between;
+}
+
+.tagline {
+    font-size: 12px;
+}
+
+.headline {
+    padding: 5px 0;
+}
+
+span{
+    font-weight: bold;
+}
+
+.Horiz{
+    border-radius: 18px;
+    transition: color 100ms ease-out;
+}
+
+.Horiz:hover{
+    background-color: #e8f5fe !important;
+    color: #50b7f5;
+    
+}
